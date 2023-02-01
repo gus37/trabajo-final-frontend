@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- titulo -->
+    <title>CV</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Gustavo Olmos</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mí</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Porfolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpg" alt="">
+            </div>
+            <h1>GUSTAVO OLMOS</h1>
+            <h2>Programador Web-Training</h2> 
+            <div class="redes">
+                <a href="https://www.facebook.com/gr.olmos/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://m.me/gr.olmos" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+                <a href="https://github.com/gus37" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <a href= "mailto:grolmos159@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <hr>
+            <br>
+            <hr>
+            <h2>Sobre Mí</h2>
+            <hr>
+            <br>
+            <hr>
+            <p><span>Hola, soy Gustavo Olmos.</span> Soy  enfermero de profesión, pero siempre me gustó la informática. Hace unos meses he tomado la decisión de adentrarme en el mundo de la programación, en especial de la  <span>Programación Web. </span></p>
+            <hr>
+            <br>
+            <hr>
+            <div class="fila">
+                
+                <!-- datos personales -->
+                <div class="col">
+                    
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            14-01-1982
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            0800-gus
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            gus@example.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.gus.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Huerta Grande, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            <hr>
+            <br>
+            <hr>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <hr>
+            <br>
+            <hr>
+            <h2>Skills</h2>
+            <hr>
+            <br>
+            <hr>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Drupal</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <hr>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <hr>
+            <br>
+            <hr>
+            <h2>Curriculum</h2>
+            <hr>
+            <br>
+            <hr>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Alfabetización digital</h4>
+                        <span class="casa">Campus Virtual-Nación Argentina</span>
+                        <span class="fecha">2022</span>
+                        <p>Introducción a los conceptos básicos de la informática, abordando los elementos iniciales fundamentales para comprender el funcionamiento general de una computadora y familiarizarse con su uso.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Visualización de Datos</h4>
+                        <span class="casa">Campus Virtual-Nación Argentina</span>
+                        <span class="fecha">2022</span>
+                        <p>Introducción de las formas más eficaces de ver y ordenar los datos. también de poder organizarlos para que el resto del equipo y los usuarios puedan entenderlos y apropiarse de ellos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Evaluación de Big Data</h4>
+                        <span class="casa">Campus Virtual-Nación Argentina</span>
+                        <span class="fecha">2022</span>
+                        <p>Analizamos un caso real de Big Data y como se solucionó la transmisión de la información en páginas webs oficiales, redes sociales y organismos gubernamentales.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Capacitación</h3>
+                    <div class="item der">
+                        <h4>Programación Web</h4>
+                        <span class="casa">Campus Virtual-Nación Argentina</span>
+                        <span class="fecha">2022</span>
+                        <p>Programación sitios web desde cero, integrando los lenguajes de programación HTML y CSS. Se profundiza en qué es HTML, cómo usarlo, cómo programar con CSS con HTML, cómo hacer un sitio web y cómo crear un formulario con HTML. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Estrategias de Marketing Digital</h4>
+                        <span class="casa">Campus Virtual-Nación Argentina</span>
+                        <span class="fecha">2022</span>
+                        <p>Definición de Marketing digital, ¿Qué es una estrategia digital? y los 8 pasos para producir un plan de marketing digital. Primeros 4 pasos para construir un plan de marketing digital. Canales de venta y de comunicación. Marketing de contenidos. Estrategia de contenidos para redes sociales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desde cero con MySQL</h4>
+                        <span class="casa">Campus Virtual-Nación Argentina</span>
+                        <span class="fecha">2022</span>
+                        <p>Conceptos básicos claves para entender las herramientas de MySQL server y workbench. Crear usuarios y utilizar los operadores básicos de manipulación de datos de MySQL. Sentencias, tablas y las funciones y operadores básicas en MySQL. Normalización, respaldo y mantenimiento de una base de datos en MySQL. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <hr>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <hr>
+            <br>
+            <hr>
+            <h2>PORTFOLIO</h2>
+            <hr>
+            <br>
+            <hr>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <hr>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <hr>
+            <br>
+            <hr>
+            <h2>CONTACTO</h2>
+            <hr>
+            <br>
+            <hr>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/mapa.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Huerta Grande, Argentina.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 0800-gus
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: gus@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <hr>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/gr.olmos/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://m.me/gr.olmos" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+            <a href="https://github.com/gus37" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            <a href= "mailto:grolmos159@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
